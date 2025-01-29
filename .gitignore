@@ -1,0 +1,47 @@
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+.vscode/
+.env/
+*.env
+.venv/
+env/
+venv/
+
+# Pipenv
+Pipfile.lock
+
+# Pytest
+.cache/
+
+# MyPy
+.mypy_cache/
+
+# Flake8
+*.flake8
+
+# Pre-commit
+.pre-commit-config.yaml
+
+# Logs
+logs/
+*.log
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Coverage reports
+*.coverage
+coverage.xml
+*.coveragerc
+nosetests.xml
+test-results/

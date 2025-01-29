@@ -1,0 +1,38 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+iniconfig = "==2.0.0"
+mypy-extensions = "==1.0.0"
+packaging = "==24.2"
+pluggy = "==1.5.0"
+typing-extensions = "==4.12.2"
+mypy = "*"
+ruff = "*"
+pytest = "*"
+watchdog = "*"
+rich = "*"
+phonenumbers = "*"
+flake8 = "*"
+black = "*"
+autopep8 = "*"
+
+[dev-packages]
+mypy = "*"
+ruff = "*"
+pytest = "*"
+watchdog = "*"
+pre-commit = "*"
+
+[requires]
+python_version = "3.12"
+
+[scripts]
+start = "python src/main.py"
+watch = "python watch.py"
+test = "pytest tests"
+lint = "ruff check src --fix"
+typecheck = "mypy src"
+all-checks = "pipenv run lint && pipenv run typecheck && pipenv run test"
